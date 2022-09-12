@@ -15,7 +15,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-    background-color: #FFFFFF;
+    background-color: #bae1ff37;
 }
 main {
     margin: 30px auto 40px;
@@ -58,7 +58,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    height: 150px;
+    height: 180px;
     width: 100%;
 
     font-size: 20px;
@@ -108,7 +108,7 @@ main {
     width: 90%;
     font-size: 12px;
     line-height: 18px;
-    padding: 15px 60px 15px 0;
+    padding: 15px 60px 20px 0;
 }
 .habilities {
     height: 275px;
