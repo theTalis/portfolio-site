@@ -7,7 +7,7 @@ def home(request):
                 "image": "/static/img/aplicativo.png",
                 "description": "Crediario digital",
                 "link": "https://crediario.digital",
-                "text": "projecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdpaokwd pawokdpaowkdapowkdp aokwd paokwd paokwd poawk"
+                "text": "projecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdpaokwd pawokdpaowkdapowkdp aokwd paokwd paokwd poawk"
             },
             {
                 "image": "/static/img/banking.png",

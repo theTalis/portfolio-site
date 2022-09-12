@@ -6,7 +6,7 @@
 
 {% block main %}
 <main>
-  <header class="navbar">
+  <section class="navbar">
     <div class="main-title">
       <span>{</span>
       <a href="#"> TalisCipriani </a>
@@ -29,18 +29,18 @@
         </a>
       </li>
     </ul>
-  </header>
+  </section>
 
-  <div id="about">
-
-    <div class="about-content">
-      <h1>Talis Eduardo Cipriani</h1>
+  <section id="about" class="about">
+    <div class="content">
+      <h1>Olá, sou Talis Cipriani</h1>
 
       <h3>Teste talis desenvolve varios plataforma e coisa de nao sei o que quando precisa chama nois</h3>
     </div>
-  </div>
+    <div class="profile"></div>
+  </section>
 
-  <div id="habilities">
+  <section id="habilities" class="habilities">
     <h4>
       Habilities
     </h4>
@@ -52,46 +52,34 @@
       <li>Mobile Development</li>
       <li>Performance</li>
     </ul>
-  </div>
+  </section>
 
-  <div id="projects">
+  <section id="projects" class="projects">
     <h4>
       Recent projects
     </h4>
     {% for project in projects %}
+    <div class="project">
+      <span>
+        <h3>- {{ project.description }}</h3>
+      </span>
 
-        <div class="project">
-          <a href={{ project.link }} target="_blank">
-            <img src={{project.image}} alt={{project.description}}>
-          </a>
+      <a href={{ project.link }} target="_blank">
+        <img src={{project.image}} alt={{project.description}}>
+      </a>
 
-          <div>
-            <h4>{{ project.description }}</h4>
-            <br>
-            <h4>{{ project.text }}</h4>
-          </div>
-        </div>
-      {% endfor %}
-  </div>
+      <span>
+        <h4>{{ project.text }}</h4>
+      </span>
+    </div>
 
-  {% comment %} <div id="email-form">
+    <br>
+    <br>
+    <br>
+    {% endfor %}
+  </section>
 
-    <img src="/static/img/profile.jpeg" alt="Profile image">
-    <form action="{% url 'send_email' %}" method="post">
-      <label for="name">Your name</label>
-      <input type="text" name="name">
-
-      <label for="email">Your e-mail</label>
-      <input type="text" name="email">
-
-      <label for="text">Tell me more</label>
-      <input type="text" name="text">
-
-      <button type="submit">Send message</button>
-    </form>
-  </div> {% endcomment %}
-
-  <div id="contacts">
+  <section id="contacts" class="contacts">
     <a href="https://github.com/theTalis" target="_blank">
       <img src="/static/img/github.png" alt="Github">
     </a>
@@ -111,9 +99,9 @@
     <a href="https://medium.com/@cipriani.talis" target="_blank">
       <img src="/static/img/medium.png" alt="Medium">
     </a>
-  </div>
+  </section>
 
-  <footer>
+  <section class="footer">
     <div>
       Copyright 2022. Talis Cipriani - Fullstack Developer
     </div>
@@ -135,6 +123,6 @@
         </a>
       </li>
     </ul>
-  </footer>
+  </section>
 </main>
 {% endblock %}
