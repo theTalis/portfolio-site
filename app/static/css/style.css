@@ -7,6 +7,9 @@
 
     color: #ffffff;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
     background-color: #021e2e;
     position: relative; 
@@ -19,6 +22,9 @@ main {
     font-weight: 700;
 
     margin-left: 90px;
+}
+.main-title span {
+    color: blue;
 }
 .main-title a {
     color: #FFFFFF;
@@ -79,29 +85,23 @@ a {
     margin-bottom: 50px;
 }
 #projects > h4 {
-    padding-top: 30px;
+    padding: 30px;
 }
 .project {
-    height: 500px;
+    height: 600px;
     width: 100%;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .project img {
-    height: 400px;
-    margin: 30px 10px 10px 60px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 0.5%;
-
     opacity: 0.85;
 }
 .project div {
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-
-    width: 36%;
-    margin: 30px;
+    padding: 10px 0 50px;
 }
 #habilities {
     height: 250px;

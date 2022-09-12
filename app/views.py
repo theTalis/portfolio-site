@@ -24,3 +24,7 @@ def home(request):
         ]
     }
     return render(request, 'home.html', data)
+
+def send_email(request):
+    """Envia email """
+    return render(request, 'home.html')

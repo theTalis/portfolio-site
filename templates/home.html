@@ -8,7 +8,9 @@
 <main>
   <header class="navbar">
     <div class="main-title">
-      <a href="#">TalisCipriani</a>
+      <span>{</span>
+      <a href="#"> TalisCipriani </a>
+      <span>}</span>
     </div>
     <ul>
       <li>
@@ -65,19 +67,29 @@
 
           <div>
             <h4>{{ project.description }}</h4>
+            <br>
             <h4>{{ project.text }}</h4>
           </div>
         </div>
       {% endfor %}
   </div>
 
-  <!-- <div id="email-form">
+  {% comment %} <div id="email-form">
 
     <img src="/static/img/profile.jpeg" alt="Profile image">
-    <form action="">
+    <form action="{% url 'send_email' %}" method="post">
+      <label for="name">Your name</label>
+      <input type="text" name="name">
 
+      <label for="email">Your e-mail</label>
+      <input type="text" name="email">
+
+      <label for="text">Tell me more</label>
+      <input type="text" name="text">
+
+      <button type="submit">Send message</button>
     </form>
-  </div> -->
+  </div> {% endcomment %}
 
   <div id="contacts">
     <a href="https://github.com/theTalis" target="_blank">
