@@ -7,6 +7,9 @@
 {% block main %}
 <main>
   <header class="navbar">
+    <div class="main-title">
+      <a href="#">TalisCipriani</a>
+    </div>
     <ul>
       <li>
         <a href="#about">
@@ -27,36 +30,54 @@
   </header>
 
   <div id="about">
-    <img src="/static/img/profile.jpeg" alt="Profile image">
 
-    <div class="title">
+    <div class="about-content">
       <h1>Talis Eduardo Cipriani</h1>
 
       <h3>Teste talis desenvolve varios plataforma e coisa de nao sei o que quando precisa chama nois</h3>
     </div>
   </div>
 
-  <div id="projects">
-    <div class="project">
-      <img src="/static/img/banking.png" alt="T2 Banking">
+  <div id="habilities">
+    <h4>
+      Habilities
+    </h4>
 
-      <div>
-        <h4>projecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd</h4>
-        <br>
-        <h4>apowkdpaokwd pawokdpaowkdapowkdp aokwd paokwd paokwd poawk</h4>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="/static/img/aplicativo.png" alt="Crediario digital">
-
-      <div>
-        <h4>projecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd</h4>
-        <br>
-        <h4>apowkdpaokwd pawokdpaowkdapowkdp aokwd paokwd paokwd poawk</h4>
-      </div>
-    </div>
+    <ul>
+      <li>Backend Development</li>
+      <li>Frontend Development</li>
+      <li>Analisys</li>
+      <li>Mobile Development</li>
+      <li>Performance</li>
+    </ul>
   </div>
+
+  <div id="projects">
+    <h4>
+      Recent projects
+    </h4>
+    {% for project in projects %}
+
+        <div class="project">
+          <a href={{ project.link }} target="_blank">
+            <img src={{project.image}} alt={{project.description}}>
+          </a>
+
+          <div>
+            <h4>{{ project.description }}</h4>
+            <h4>{{ project.text }}</h4>
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+
+  <!-- <div id="email-form">
+
+    <img src="/static/img/profile.jpeg" alt="Profile image">
+    <form action="">
+
+    </form>
+  </div> -->
 
   <div id="contacts">
     <a href="https://github.com/theTalis" target="_blank">
@@ -74,10 +95,34 @@
     <a href="https://twitter.com/CiprianiTalis" target="_blank">
       <img src="/static/img/twitter.png" alt="Twitter">
     </a>
+
+    <a href="https://medium.com/@cipriani.talis" target="_blank">
+      <img src="/static/img/medium.png" alt="Medium">
+    </a>
   </div>
 
   <footer>
-    Copyright 2022. Talis Cipriani - Fullstack Developer
+    <div>
+      Copyright 2022. Talis Cipriani - Fullstack Developer
+    </div>
+
+    <ul>
+      <li>
+        <a href="#about">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#projects">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="#contacts">
+          Contacts
+        </a>
+      </li>
+    </ul>
   </footer>
 </main>
 {% endblock %}
