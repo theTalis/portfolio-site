@@ -5,21 +5,24 @@ def home(request):
         "projects": [
             {
                 "image": "/static/img/aplicativo.png",
-                "description": "Crediario digital",
+                "title": "Crediário digital",
                 "link": "https://crediario.digital",
-                "text": "projecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdpaokwd pawokdpaowkdapowkdp aokwd paokwd paokwd poawk"
+                "color": "#33E0A1",
+                "description": "Crediário Digital is a native mobile application developed with a focus on the retail customer of physical stores in order to enable the customer to make payments remotely in the best Buy now pay later style"
             },
             {
                 "image": "/static/img/banking.png",
-                "description": "T2 Banking",
+                "title": "T2 Banking",
                 "link": "https://app.t2bank.com.br",
-                "text": "projecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdpaokwd pawokdpaowkdapowkdp aokwd paokwd paokwd poawk"
+                "color": "#000000",
+                "description": "T2Banking is a platform for processing payments made through pix and boleto, with statement and transfer control"
             },
             {
                 "image": "/static/img/emprestimo.png",
-                "description": "Credito com vc",
+                "title": "Credito com vc",
                 "link": "https://credito.com.vc",
-                "text": "projecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdprojecto coisado bastante trabalho coisa e tal e vai e tome e adwojdpoajwdoajwdoijawdojawd apowkdpaokwd pawokdpaowkdapowkdp aokwd paokwd paokwd poawk"
+                "color": "#F8E14C",
+                "description": "Credito.com.vc is a platform from which retail customers can purchase personal loans directly in the store"
             }
         ]
     }

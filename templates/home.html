@@ -6,11 +6,9 @@
 
 {% block main %}
 <main>
-  <section class="navbar">
-    <div class="main-title">
-      <span>{</span>
-      <a href="#"> TalisCipriani </a>
-      <span>}</span>
+  <section class="header">
+    <div class="header-title">
+      <a href="#">TalisCipriani</a>
     </div>
     <ul>
       <li>
@@ -25,23 +23,32 @@
       </li>
       <li>
         <a href="#contacts">
-          Contacts
+          Contact
         </a>
       </li>
     </ul>
   </section>
 
   <section id="about" class="about">
-    <div class="content">
-      <h1>Olá, sou Talis Cipriani</h1>
+    <div class="about-items">
+      <h1 class="about-title">
+        <span>
+          Hi, i'm
+        </span>
+        <br>
+        <span>
+          Talis Cipriani
+        </span>
+      </h1>
 
-      <span>Teste talis desenvolve varios plataforma e coisa de nao sei o que quando precisa chama nois</span>
+      <span class="about-subtitle">I am a fullstack engineer responsible for building solutions aimed at granting credit and payment methods with quality and focus on the user.</span>
     </div>
+
     <div class="profile"></div>
   </section>
 
   <section id="habilities" class="habilities">
-    <h1>
+    <h1 class="subtitle black">
       My skills
     </h1>
 
@@ -70,53 +77,53 @@
   </section>
 
   <section id="projects" class="projects">
-    <h4>
+    <h1 class="subtitle">
       My best projects
-    </h4>
+    </h1>
     {% for project in projects %}
     <div class="project">
-      <span>
-        <h3>- {{ project.description }}</h3>
-      </span>
 
-      <a href={{ project.link }} target="_blank">
-        <img src={{project.image}} alt={{project.description}}>
-      </a>
+      <div class="project-image" >
+        <a href={{ project.link }} target="_blank" style="background-color: {{ project.color }}">
+          <img src={{project.image}} alt={{project.description}} style="background-color: {{ project.color }}">
+        </a>
+      </div>
+      <div class="project-item">
+        <span class="project-title">{{ project.title }}</span>
 
-      <span>
-        <h4>{{ project.text }}</h4>
-      </span>
+        <span class="project-description">{{ project.description }}</span>
+      </div>
     </div>
-
-    <br>
-    <br>
-    <br>
     {% endfor %}
   </section>
 
   <section id="contacts" class="contacts">
-    <h1>My contacts</h1>
+    <h1 class="subtitle">
+      My contacts
+    </h1>
 
-    <a href="https://github.com/theTalis" target="_blank">
-      <img src="/static/img/github.png" alt="Github">
-    </a>
+    <div>
+      <a href="https://github.com/theTalis" target="_blank">
+        <img src="/static/img/github.png" alt="Github">
+      </a>
 
-    <a href="mailto:cipriani.talis@gmail.com" target="_blank">
-      <img src="/static/img/email.png" alt="Email">
-    </a>
+      <a href="mailto:cipriani.talis@gmail.com" target="_blank">
+        <img src="/static/img/email.png" alt="Email">
+      </a>
 
-    <a href="https://www.linkedin.com/in/talis-eduardo-cipriani-aa725391/" target="_blank">
-      <img src="/static/img/linkedin.png" alt="Linkedin">
-    </a>
+      <a href="https://www.linkedin.com/in/talis-eduardo-cipriani-aa725391/" target="_blank">
+        <img src="/static/img/linkedin.png" alt="Linkedin">
+      </a>
 
-    <a href="https://medium.com/@cipriani.talis" target="_blank">
-      <img src="/static/img/medium.png" alt="Medium">
-    </a>
+      <a href="https://medium.com/@cipriani.talis" target="_blank">
+        <img src="/static/img/medium.png" alt="Medium">
+      </a>
+    </div>
   </section>
 
-  <section class="footer">
+  <section class="header">
     <div>
-      Copyright 2022. Talis Cipriani - Fullstack Developer
+      Talis Cipriani
     </div>
 
     <ul>
