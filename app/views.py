@@ -6,7 +6,7 @@ def home(request):
             {
                 "image": "/static/img/aplicativo.png",
                 "title": "Crediário digital",
-                "link": "https://crediario.digital",
+                "link": "https://crediario.digital/store",
                 "color": "#33E0A1",
                 "description": "Crediário Digital is a native mobile application developed with a focus on the retail customer of physical stores in order to enable the customer to make payments remotely in the best Buy now pay later style"
             },
