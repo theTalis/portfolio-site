@@ -15,19 +15,15 @@ a {
 }
 
 @media (min-width: 175px) {
-    * {
+    /* * {
         width: 100%;
-    }
+    } */
     main {
         margin: 40px auto;
     }
     .header {
         font-size: 12px;
         font-weight: 400;
-    
-        display: flex;
-        flex-direction: row;
-
         width: 90%;
     }
     .header-title {
@@ -123,8 +119,8 @@ a {
         flex-direction: row;
         align-items: center;
 
-        height: 290px;
         width: 100%;
+        margin-bottom: 30px;
     }
     .project-item {
         width: 50%;
@@ -161,6 +157,9 @@ a {
         flex-direction: column;
 
         margin-bottom: 120px;
+    }
+    .contacts div {
+        width: 100%;
     }
     .contacts img {
         width: 30px;
@@ -331,6 +330,6 @@ a {
     }
     .contacts img {
         width: 40px;
-        margin: 5%;
+        margin: 7% 5%;
     }
 }
