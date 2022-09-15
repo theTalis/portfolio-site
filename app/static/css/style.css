@@ -1,69 +1,80 @@
-
 * {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    
-    margin: auto;
-    color: #081c2c;
-    background-color: #ffffff;
+    box-sizing: border-box;
 }
 html {
 	scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
+    color: #000000;
+}
+h1 {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.my-20 {
+    margin: 20px 0;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.menu nav {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.menu nav ul li {
+    padding: 16px;
+    margin: 0 8px;
 }
 
 @media (min-width: 175px) {
-    /* * {
-        width: 100%;
-    } */
-    main {
-        margin: 40px auto;
-    }
-    .header {
-        font-size: 12px;
-        font-weight: 400;
-        width: 90%;
-    }
-    .header-title {
-        font-size: 14px;
-        font-weight: 700;
-    }
-    .header ul {
+    .menu nav ul {
         display: none;
     }
     .about {
-        height: 650px;
-        margin: 30px auto 0;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        position: relative;
+        height: 600px;
     }
     .about-title {
-        padding: 20px 0;     
-        width: 90%;  
+        padding: 20px 20px;
     }
     .about-subtitle {
-        width: 90%;
         font-family: 'Inter', 'sans-serif';
         font-size: 16px;
         font-weight: 400;
+
+        padding: 0 20px;
     }
     .about-items {
         display: flex;
         flex-direction: column;
-        font-size: 34px;
-
+        font-size: 30px;
         width: 100%;
         margin-right: 7%;
         margin-bottom: 30px;
     }
     .profile {
-        height: 100%;
+        height: 60%;
         width: 100%;
-    
+
         background-image: url("/static/img/profile.jpg");
         filter: grayscale(90%);
         background-repeat: no-repeat;
@@ -71,39 +82,36 @@ a {
         background-position: top;
         border-radius: 0.6%;
     }
+    
     .habilities {
-        height: 420px;
+        height: 320px;
         background-color: #081c2c;
     }
     .subtitle {
-        padding: 50px 0 10px;
-        font-size: 32px;
-        width: 90%;
+        padding: 50px 20px 10px;
+        font-size: 30px;
     }
+
     .black {
         background-color: #081c2c;
         color: #ffffff;
     }
-    .habilities div {
-        margin: 20px 0;
-    }
+    
     .habilities ul {
-        list-style-type: none;
         display: flex;
-        flex-direction: column;
-
-        font-size: 16px;
+        font-size: 12px;
         background-color: #081c2c;
+    }
+    .habilities ul li:first-of-type {
+        margin-right: 16px;
     }
     .habilities li {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        margin: 5px 0;
-        padding: 20px;
-        height: 20px;
-        width: 70%;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 10px 10px;
+        padding: 25px;
+        width: 100%;
         background-color: #0d304c;
         border-radius: 8px;
     }
@@ -111,19 +119,21 @@ a {
         background-color: #0d304c;
         color: #FFFFFF;
     }
+
     .projects h1{
         margin-bottom: 40px;
     }
     .project {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+
+        position: relative;
 
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
     }
     .project-item {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         padding: 0 3%;
@@ -140,64 +150,54 @@ a {
         line-height: 22px;
     }
     .project-image {
-        height: 100%;
-        width: 50%;
+        width: 100%;
 
         display: flex;
     }
     .project-image a img {
         width: 90%;
-        object-fit: fill;
+        object-fit: contain;
         border-radius: 0.2%;
     }
+
     .contacts {
-        height: 200px;
         width: 100%;
         display: flex;
         flex-direction: column;
-
-        margin-bottom: 120px;
-    }
-    .contacts div {
-        width: 100%;
+        margin-bottom: 100px;
     }
     .contacts img {
         width: 30px;
         margin: 5%;
     }
-}
+} 
 
-@media (min-width: 875px) {
-    * {
-        width: 92%;
-    }
-    main {
-        margin: 40px auto;
-    }
-    .header {
+@media (min-width: 575px) {
+    .menu {
         font-size: 12px;
         font-weight: 400;
-    
         display: flex;
         flex-direction: row;
     }
     .header-title {
+        display: flex;
+        align-items: center;
         font-size: 14px;
         font-weight: 700;
     }
-    .header ul {
-        list-style-type: none;
+    .menu nav ul {
         display: flex;
-        flex-direction: row;
-        width: 38%;
+        margin-left: auto;
+        padding-top: 10px;
     }
     .about {
-        height: 650px;
-        margin: 30px auto 0;
-        
+        position: relative;
+        height: 800px;
+    }
+    .about-wrapper {
         display: flex;
-        flex-direction: row;
         align-items: center;
+        height: 100%;
     }
     .about-title {
         padding: 20px 0;       
@@ -206,19 +206,21 @@ a {
         font-family: 'Inter', 'sans-serif';
         font-size: 16px;
         font-weight: 400;
+        padding: 0;
     }
     .about-items {
         display: flex;
         flex-direction: column;
         font-size: 34px;
-
-        width: 74%;
+        width: 50%;
         margin-right: 7%;
     }
     .profile {
+        position: absolute;
         height: 100%;
-        width: 100%;
-    
+        width: 50%;
+        top: 0;
+        left: 50%;
         background-image: url("/static/img/profile.jpg");
         filter: grayscale(90%);
         background-repeat: no-repeat;
@@ -226,8 +228,9 @@ a {
         background-position: top;
         border-radius: 0.6%;
     }
+
     .habilities {
-        height: 420px;
+        height: 320px;
         background-color: #081c2c;
     }
     .subtitle {
@@ -238,29 +241,21 @@ a {
         background-color: #081c2c;
         color: #ffffff;
     }
-    .habilities div {
-        display: flex;
-        flex-direction: row;
-        width: 38%;
-        margin: 30px 0;
-    }
     .habilities ul {
-        list-style-type: none;
         display: flex;
-        flex-direction: column;
-
         font-size: 16px;
         background-color: #081c2c;
+    }
+    .habilities ul li:first-of-type {
+        margin-right: 16px;
     }
     .habilities li {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        
         margin: 5px auto;
         padding: 25px;
-        height: 50px;
-        width: 270px;
+        width: 100%;
         background-color: #0d304c;
         border-radius: 8px;
     }
@@ -268,6 +263,7 @@ a {
         background-color: #0d304c;
         color: #FFFFFF;
     }
+
     .projects h1{
         margin-bottom: 60px;
     }
@@ -281,6 +277,7 @@ a {
 
         height: 400px;
         width: 100%;
+        margin-bottom: 15px;
     }
     .project-item {
         width: 50%;
@@ -313,23 +310,28 @@ a {
         height: 95%;
         width: 100%;
         object-fit: scale-down;
-
         border-radius: 0.2%;
+        margin: 10px 0;
+        margin-left: 30px;
+        margin-right: 0;
     }
+  
     .contacts {
-        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 100px;
+    }
+    .contacts .container {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin: 50px 100px 90px;
     }
-    .contacts div {
-        width: 100%;
-        height: 100%;
+    .contact-links {
+        width: 50%;
+        margin: 16px auto;
     }
     .contacts img {
         width: 40px;
-        margin: 7% 5%;
     }
 }

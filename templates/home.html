@@ -6,143 +6,154 @@
 
 {% block main %}
 <main>
-  <section class="header">
-    <div class="header-title">
-      <a href="#">TalisCipriani</a>
+  <header class="menu">
+    <div class="container">
+      <nav>
+        <div class="header-title my-20 ml-20">
+          <a href="#">TalisCipriani</a>
+        </div>
+        <ul>
+          <li>
+            <a href="#about">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contacts">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <ul>
-      <li>
-        <a href="#about">
-          About
-        </a>
-      </li>
-      <li>
-        <a href="#projects">
-          Projects
-        </a>
-      </li>
-      <li>
-        <a href="#contacts">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </section>
+  </header>
 
   <section id="about" class="about">
-    <div class="about-items">
-      <h1 class="about-title">
-        <span>
-          Hi, i'm
-        </span>
-        <br>
-        <span>
-          Talis Cipriani
-        </span>
-      </h1>
-
-      <span class="about-subtitle">I am a fullstack engineer responsible for building solutions aimed at granting credit and payment methods with quality and focus on the user.</span>
+    <div class="container" style="height: 100%;">
+      <div class="about-wrapper">
+        <div class="about-items">
+          <h1 class="about-title">
+            <span>
+              Hi, i'm
+            </span>
+            <br>
+            <span>
+              Talis Cipriani
+            </span>
+          </h1>
+          <div class="about-subtitle">I am a fullstack engineer responsible for building solutions aimed at granting credit and payment methods with quality and focus on the user.</div>
+        </div>
+      </div>
+      <div class="profile"></div>
     </div>
-
-    <div class="profile"></div>
   </section>
 
   <section id="habilities" class="habilities">
-    <h1 class="subtitle black">
-      My skills
-    </h1>
-
-    <div>
-      <ul>
-        <li>
-          <span>Backend Development</span>
-          <span></span>
-        </li>
-        <li>
-          <span>Frontend Development</span>
-          <span></span>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span>Mobile Development</span>
-          <span></span>
-        </li>
-        <li>
-          <span>Performance</span>
-          <span></span>
-        </li>
-      </ul>
+    <div class="container">
+      <h1 class="subtitle black">
+        My skills
+      </h1>
+      <div>
+        <ul>
+          <li>
+            <span>Backend Development</span>
+            <span></span>
+          </li>
+          <li>
+            <span>Frontend Development</span>
+            <span></span>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span>Mobile Development</span>
+            <span></span>
+          </li>
+          <li>
+            <span>Performance</span>
+            <span></span>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section id="projects" class="projects">
-    <h1 class="subtitle">
-      My best projects
-    </h1>
-    {% for project in projects %}
-    <div class="project">
-
-      <div class="project-image" >
-        <a href={{ project.link }} target="_blank" style="background-color: {{ project.color }}">
-          <img src={{project.image}} alt={{project.description}} style="background-color: {{ project.color }}">
-        </a>
+    <div class="container">
+      <h1 class="subtitle">
+        My best projects
+      </h1>
+      {% for project in projects %}
+      <div class="project">
+        <div class="project-image" >
+          <a href={{ project.link }} target="_blank" style="background-color: {{ project.color }}">
+            <img src={{project.image}} alt={{project.description}}>
+          </a>
+        </div>
+        <div class="project-item">
+          <span class="project-title">{{ project.title }}</span>
+          <span class="project-description">{{ project.description }}</span>
+        </div>
       </div>
-      <div class="project-item">
-        <span class="project-title">{{ project.title }}</span>
-
-        <span class="project-description">{{ project.description }}</span>
-      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </section>
 
   <section id="contacts" class="contacts">
-    <h1 class="subtitle">
-      My contacts
-    </h1>
-
-    <div>
-      <a href="https://github.com/theTalis" target="_blank">
-        <img src="/static/img/github.png" alt="Github">
-      </a>
-
-      <a href="mailto:cipriani.talis@gmail.com" target="_blank">
-        <img src="/static/img/email.png" alt="Email">
-      </a>
-
-      <a href="https://www.linkedin.com/in/talis-eduardo-cipriani-aa725391/" target="_blank">
-        <img src="/static/img/linkedin.png" alt="Linkedin">
-      </a>
-
-      <a href="https://medium.com/@talis_44577" target="_blank">
-        <img src="/static/img/medium.png" alt="Medium">
-      </a>
+    <div class="container">
+      <h1 class="subtitle">
+        My contacts
+      </h1>
+      <div class="contact-links">
+        <a href="https://github.com/theTalis" target="_blank">
+          <img src="/static/img/github.png" alt="Github">
+        </a>
+  
+        <a href="mailto:cipriani.talis@gmail.com" target="_blank">
+          <img src="/static/img/email.png" alt="Email">
+        </a>
+  
+        <a href="https://www.linkedin.com/in/talis-eduardo-cipriani-aa725391/" target="_blank">
+          <img src="/static/img/linkedin.png" alt="Linkedin">
+        </a>
+  
+        <a href="https://medium.com/@talis_44577" target="_blank">
+          <img src="/static/img/medium.png" alt="Medium">
+        </a>
+      </div>
     </div>
   </section>
 
-  <section class="header">
-    <div>
-      Talis Cipriani
+  <footer class="menu">
+    <div class="container">
+      <nav>
+        <div class="header-title my-20 ml-20">
+          <a href="#">TalisCipriani</a>
+        </div>
+        <ul>
+          <li>
+            <a href="#about">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contacts">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <ul>
-      <li>
-        <a href="#about">
-          About
-        </a>
-      </li>
-      <li>
-        <a href="#projects">
-          Projects
-        </a>
-      </li>
-      <li>
-        <a href="#contacts">
-          Contacts
-        </a>
-      </li>
-    </ul>
-  </section>
+  </footer>
 </main>
 {% endblock %}
